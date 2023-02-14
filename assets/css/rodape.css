@@ -1,0 +1,14 @@
+.rodape{
+    background-image: url(../img/parede-pedra.jpg);
+    text-align: center;
+    padding: 1em;
+    box-shadow: 0 -2px 5px var(--cor-sombra);
+}
+
+.rodape--texto, .rodape--link{
+    padding: 0.5em;
+}
+
+.rodape--link:hover{
+    text-shadow: 1px 1px var(--cor-fundo-menu);
+}

@@ -2,5 +2,5 @@
     text-align: center;
     background-image: url(../img/17-barren-wood-plank-texture.jpg);
     padding: 5em;
-    
+    box-shadow: 0 2px 5px var(--cor-sombra);
 }

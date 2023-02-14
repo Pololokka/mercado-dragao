@@ -1,37 +1,45 @@
 @import url(reset.css);
 @import url(header.css);
 @import url(menu.css);
+@import url(rodape.css);
+@import url(produtos.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 
 :root{
     /*fonte*/
     --fonte-printicpal: 'Pathway Gothic One', sans-serif;
-    --fonte-tamanho-titulo: 2rem;
-    --fonte-tamanho-subtitulo: 1.5rem;
-    --fonte-tamanho-texto: 1rem;
-    --fonte-tamanho-pq: 0.5rem;
+    --fonte-tamanho-titulo: 3rem;
+    --fonte-tamanho-subtitulo: 2rem;
+    --fonte-tamanho-texto: 1.5rem;
+    --fonte-tamanho-pq: 1rem;
 
     /*cores*/
-    --cor-fonte-marrom-escuro: #1a0000;
-    --cor-fundo-parchment: #ebd5b3;
+    --cor-fonte: #000000;
+    --cor-fonte-hover: #FFFFFF;
     --cor-fundo-menu: #966F33;
+    --cor-sombra: #443022;
+    --cor-card-fundo: #808080;
 }
 
 .titulo {
     font-family: var(--fonte-printicpal);
     font-size: var(--fonte-tamanho-titulo);
-    color: var(--cor-fundo-parchment);
+    color: var(--cor-fonte);
 }
 
 .subtitulo {
     font-family: var(--fonte-printicpal);
     font-size: var(--fonte-tamanho-subtitulo);
-    color: var(--cor-fundo-parchment);
+    color: var(--cor-fonte);
 }
 
 .texto {
     font-family: var(--fonte-printicpal);
     font-size: var(--fonte-tamanho-texto);
-    color: var(--cor-fundo-parchment);
+    color: var(--cor-fonte);
+}
+
+main{
+    background-image: url(../img/pergaminho-textura.jpg);
 }

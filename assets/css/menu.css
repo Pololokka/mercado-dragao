@@ -21,6 +21,10 @@
     left: 2%;
 }
 
+.menu__botao--click {
+    display: none;
+}
+
 .menu__botao--fecha{
     background-image: url(../img/carrinho.png);
     background-repeat: no-repeat;
