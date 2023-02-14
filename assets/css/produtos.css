@@ -1,9 +1,11 @@
-.novos__titulo, .quentes__titulo{
+.novos__titulo, .quentes__titulo,
+.todos__titulo{
     text-align: center;
     padding-bottom: 1em;
 }
 
-.produtos-novos__container, .produtos-quentes__container{
+.produtos-novos__container, .produtos-quentes__container,
+.produtos-todos__container{
     margin: 0 3em;
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +14,8 @@
     align-items: center;
 }
 
-.produtos-quentes, .produtos-novos {
+.produtos-quentes, .produtos-novos,
+.produtos-todos {
     padding: 2em;
 }
 
@@ -41,6 +44,7 @@
     border-radius: 15px;
     padding: 0.5em;
     cursor: pointer;
+    margin: 0.5em 0;
 }
 
 .produto__botao:hover{
