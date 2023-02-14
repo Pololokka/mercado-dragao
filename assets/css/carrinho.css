@@ -2,6 +2,8 @@
     padding: 2em 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1em;
 }
 
@@ -33,4 +35,19 @@
     width: 15%;
     padding: 0.2em 0.3em;
     border-radius: 5px;
+}
+
+.compra__botao{
+    background-color: var(--cor-sombra);
+    border-radius: 15px;
+    padding: 0.5em;
+    cursor: pointer;
+    margin: 0.5em 0;
+    width: auto;
+}
+
+.compra__botao:hover{
+    color: var(--cor-fonte-hover);
+    text-shadow: 2px 2px var(--cor-fonte);
+    box-shadow: 2px 2px 4px var(--cor-sombra);
 }
