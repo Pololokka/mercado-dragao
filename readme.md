@@ -16,9 +16,9 @@ Uma página de e-commerce com a temática de rpg
 
 Página principal que mostra alguns produtos(como mais vendidos, novas ofertas, e etc), assim como login e cadastro de novos clientes
 
-### Cliente
+### Produtos
 
-Página que mostra o cadastro do cliente
+Página que mostra todos os produtos do catálogo
 
 ### Carrinho
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <title>Mercado do Dragão | Home</title>
 </head>
 <body>
@@ -11,6 +12,28 @@
         <h1 class="titulo titulo__cabecalho"><a href="#">Mercado do Dragão</a></h1>
         <p class="subtitulo texto__cabecalho">Os melhores tesouros para a sua mesa!</p>
     </header>
+
+    <section class="menu">
+        <input type="button" id="btn-label">
+        <label for="btn-label" id="btn" class="menu__botao"></label>
+
+        <div class="menu__container--fecha" id="menu">
+            <ul class="menu__nav--lista">
+                <li class="menu__nav--item">
+                    <a href="#" class="subtitulo menu__nav--link">Home</a>
+                </li>
+                <li class="menu__nav--item">
+                    <a href="#" class="subtitulo menu__nav--link">Produtos</a>
+                </li>
+                <li class="menu__nav--item">
+                    <a href="#" class="subtitulo menu__nav--link">Carrinho</a>
+                </li>
+            </ul>
+
+            <input type="button" id="btn-fecha-label">
+            <label for="btn-fecha-label" id="btn-fecha" class="menu__botao--fecha"></label>
+        </div>
+    </section>
     
 </body>
 </html>

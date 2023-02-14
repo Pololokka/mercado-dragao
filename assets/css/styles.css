@@ -1,3 +1,7 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(menu.css);
+
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 
 :root{
@@ -11,19 +15,23 @@
     /*cores*/
     --cor-fonte-marrom-escuro: #1a0000;
     --cor-fundo-parchment: #ebd5b3;
+    --cor-fundo-menu: #966F33;
 }
 
 .titulo {
     font-family: var(--fonte-printicpal);
     font-size: var(--fonte-tamanho-titulo);
+    color: var(--cor-fundo-parchment);
 }
 
 .subtitulo {
     font-family: var(--fonte-printicpal);
     font-size: var(--fonte-tamanho-subtitulo);
+    color: var(--cor-fundo-parchment);
 }
 
 .texto {
     font-family: var(--fonte-printicpal);
     font-size: var(--fonte-tamanho-texto);
+    color: var(--cor-fundo-parchment);
 }
