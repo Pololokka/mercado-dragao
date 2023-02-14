@@ -1,0 +1,50 @@
+.novos__titulo, .quentes__titulo{
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.produtos-novos__container, .produtos-quentes__container{
+    margin: 0 3em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtos-quentes, .produtos-novos {
+    padding: 2em;
+}
+
+.produto__container {
+    max-width: 25%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0.75em;
+    border-radius: 15px;
+    background-color: var(--cor-card-fundo);
+}
+
+.produto__imagem {
+    max-width: 75%;
+    border: 2px solid rgba(165, 42, 42, 0.479);
+    border-radius: 15px;
+}
+
+.produto__conteudo{
+    padding: 0.2em;
+}
+
+.produto__botao{
+    background-color: var(--cor-sombra);
+    border-radius: 15px;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.produto__botao:hover{
+    color: var(--cor-fonte-hover);
+    text-shadow: 2px 2px var(--cor-fonte);
+    box-shadow: 2px 2px 4px var(--cor-sombra);
+}
