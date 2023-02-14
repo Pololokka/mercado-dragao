@@ -1,0 +1,36 @@
+.carrinho{
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.carrinho__produto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor-card-fundo);
+    text-align: center;
+    height: 15%;
+    margin: 0 6em;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 0.75em;
+    border-radius: 15px;
+    background-color: var(--cor-card-fundo);
+}
+
+.carrinho__img{
+    width: 10%;
+    border: 2px solid rgba(165, 42, 42, 0.479);
+    border-radius: 15px;
+}
+
+.qta__carrinho{
+    font-family: var(--fonte-printicpal);
+    font-size: var(--fonte-tamanho-texto);
+    color: var(--cor-fonte);
+    width: 15%;
+    padding: 0.2em 0.3em;
+    border-radius: 5px;
+}
