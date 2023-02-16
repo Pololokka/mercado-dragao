@@ -5,7 +5,6 @@ function printaCarrinho(){
     arrayConvertido = JSON.parse(arrayAgain);
     console.log(arrayConvertido);
 
-    console.log(arrayConvertido)
     arrayConvertido.map(function(item){
         carrinhoP.innerHTML += `
             <div class="carrinho__produto">
