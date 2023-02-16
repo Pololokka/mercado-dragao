@@ -16,4 +16,16 @@ function printaProdutosNovos(){
     });
 }
 
+function adicionaCarrinhoTodos() {
+    const botao = document.querySelectorAll("[data-valor]");
+    botao.forEach( elemento => {
+        elemento.addEventListener('click', evento => {
+            let idProduto = evento.target.getAttribute('data-valor');
+            arrayCarrinho.push(produtosTodos[idProduto])
+            salvaItens();
+        })
+    })
+}
+
+adicionaCarrinhoTodos();
 printaProdutosNovos();

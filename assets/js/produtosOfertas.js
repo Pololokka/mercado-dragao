@@ -1,80 +1,6 @@
 const ofertaP = document.querySelector("[data-oferta]");
 
-const produtosOferta = [
-    {
-        id : "18",
-        imagem : "assets/img/sapo.png",
-        alt: "Sapo, de Chrono Trigger",
-        nome : "Sapola do Chrono Trigger",
-        descricao: "O mais valente dos cavaleiros, agora na sua casa! Impresso em resina e pintado a mão.",
-        preco: "150,00"
-    },
-    {
-        id : "19",
-        imagem : "assets/img/rolf.png",
-        alt: "Rolf, o Bárbaro",
-        nome : "Rolf, o Bárbaro",
-        descricao: "Este sanguinário bárbaro mata orcs zumbis no café da manhã. Mini de plástico pintada a mão.",
-        preco: "100,00"
-    },
-    {id : "20",
-        imagem : "assets/img/rex.png",
-        alt: "Captão Rex",
-        nome : "Captão Rex",
-        descricao: "O comandante da 501ª está pronto para liderar suas tropas. Mini de plástico pintada a mão.",
-        preco: "120,00"
-    },
-    {
-        id : "21",
-        imagem : "assets/img/sapo.png",
-        alt: "Sapo, de Chrono Trigger",
-        nome : "Sapola do Chrono Trigger",
-        descricao: "O mais valente dos cavaleiros, agora na sua casa! Impresso em resina e pintado a mão.",
-        preco: "150,00"
-    },
-    {
-        id : "22",
-        imagem : "assets/img/rolf.png",
-        alt: "Rolf, o Bárbaro",
-        nome : "Rolf, o Bárbaro",
-        descricao: "Este sanguinário bárbaro mata orcs zumbis no café da manhã. Mini de plástico pintada a mão.",
-        preco: "100,00"
-    },
-    {
-        id : "23",
-        imagem : "assets/img/rex.png",
-        alt: "Captão Rex",
-        nome : "Captão Rex",
-        descricao: "O comandante da 501ª está pronto para liderar suas tropas. Mini de plástico pintada a mão.",
-        preco: "120,00"
-    },
-    {
-        id : "24",
-        imagem : "assets/img/sapo.png",
-        alt: "Sapo, de Chrono Trigger",
-        nome : "Sapola do Chrono Trigger",
-        descricao: "O mais valente dos cavaleiros, agora na sua casa! Impresso em resina e pintado a mão.",
-        preco: "150,00"
-    },
-    {
-        id : "25",
-        imagem : "assets/img/rolf.png",
-        alt: "Rolf, o Bárbaro",
-        nome : "Rolf, o Bárbaro",
-        descricao: "Este sanguinário bárbaro mata orcs zumbis no café da manhã. Mini de plástico pintada a mão.",
-        preco: "100,00"
-    },
-    {
-        id : "26",
-        imagem : "assets/img/rex.png",
-        alt: "Captão Rex",
-        nome : "Captão Rex",
-        descricao: "O comandante da 501ª está pronto para liderar suas tropas. Mini de plástico pintada a mão.",
-        preco: "120,00"
-    }
- ];
-
- produtosOferta.length = 6;
+produtosOferta.length = 6;
 
 function printaProdutosOferta(){
     produtosOferta.map(function(item){
@@ -84,10 +10,24 @@ function printaProdutosOferta(){
                 <p class="subtitulo produto__titulo produto__conteudo">${item.nome}</p>
                 <p class="texto produto__descricao produto__conteudo">${item.descricao}</p>
                 <p class="texto produto__preco produto__conteudo">R$ ${item.preco}</p>
-                <input type="button" class="texto produto__botao produto__conteudo" value="Pedir para o mercador" data-valor="${item.id}">
+                <input type="button" class="texto produto__botao produto__conteudo" value="Pedir para o mercador" data-oferta="${item.id}">
             </div>
         `
     });
 }
 
+function adicionaCarrinhoTodos() {
+    const botao = document.querySelectorAll("[data-oferta]");
+    botao.forEach( elemento => {
+        elemento.addEventListener('click', evento => {
+            console.log(produtosOferta)
+            console.log(evento.target.getAttribute('data-oferta'))
+            let idProduto = evento.target.getAttribute('data-oferta');
+            arrayCarrinho.push(produtosOferta[idProduto])
+            salvaItens();
+        })
+    })
+ }
+
+adicionaCarrinhoTodos();
 printaProdutosOferta();
