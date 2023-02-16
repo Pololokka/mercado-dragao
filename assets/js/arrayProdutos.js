@@ -1,23 +1,22 @@
-const ofertaP = document.querySelector("[data-oferta]");
-
-const produtosOferta = [
+const produtosTodos = [
     {
-        id : "18",
+        id : "0",
         imagem : "assets/img/sapo.png",
         alt: "Sapo, de Chrono Trigger",
         nome : "Sapola do Chrono Trigger",
         descricao: "O mais valente dos cavaleiros, agora na sua casa! Impresso em resina e pintado a mão.",
         preco: "150,00"
     },
-    {
-        id : "19",
+    {   
+        id : "1",
         imagem : "assets/img/rolf.png",
         alt: "Rolf, o Bárbaro",
         nome : "Rolf, o Bárbaro",
         descricao: "Este sanguinário bárbaro mata orcs zumbis no café da manhã. Mini de plástico pintada a mão.",
         preco: "100,00"
     },
-    {id : "20",
+    {
+        id : "2",
         imagem : "assets/img/rex.png",
         alt: "Captão Rex",
         nome : "Captão Rex",
@@ -25,7 +24,7 @@ const produtosOferta = [
         preco: "120,00"
     },
     {
-        id : "21",
+        id : "3",
         imagem : "assets/img/sapo.png",
         alt: "Sapo, de Chrono Trigger",
         nome : "Sapola do Chrono Trigger",
@@ -33,7 +32,7 @@ const produtosOferta = [
         preco: "150,00"
     },
     {
-        id : "22",
+        id : "4",
         imagem : "assets/img/rolf.png",
         alt: "Rolf, o Bárbaro",
         nome : "Rolf, o Bárbaro",
@@ -41,7 +40,7 @@ const produtosOferta = [
         preco: "100,00"
     },
     {
-        id : "23",
+        id : "5",
         imagem : "assets/img/rex.png",
         alt: "Captão Rex",
         nome : "Captão Rex",
@@ -49,7 +48,7 @@ const produtosOferta = [
         preco: "120,00"
     },
     {
-        id : "24",
+        id : "6",
         imagem : "assets/img/sapo.png",
         alt: "Sapo, de Chrono Trigger",
         nome : "Sapola do Chrono Trigger",
@@ -57,7 +56,7 @@ const produtosOferta = [
         preco: "150,00"
     },
     {
-        id : "25",
+        id : "7",
         imagem : "assets/img/rolf.png",
         alt: "Rolf, o Bárbaro",
         nome : "Rolf, o Bárbaro",
@@ -65,7 +64,7 @@ const produtosOferta = [
         preco: "100,00"
     },
     {
-        id : "26",
+        id : "8",
         imagem : "assets/img/rex.png",
         alt: "Captão Rex",
         nome : "Captão Rex",
@@ -73,21 +72,3 @@ const produtosOferta = [
         preco: "120,00"
     }
  ];
-
- produtosOferta.length = 6;
-
-function printaProdutosOferta(){
-    produtosOferta.map(function(item){
-        ofertaP.innerHTML += `
-            <div class="produto__container">
-                <img src="${item.imagem}" alt="${item.alt}" class="produto__imagem">
-                <p class="subtitulo produto__titulo produto__conteudo">${item.nome}</p>
-                <p class="texto produto__descricao produto__conteudo">${item.descricao}</p>
-                <p class="texto produto__preco produto__conteudo">R$ ${item.preco}</p>
-                <input type="button" class="texto produto__botao produto__conteudo" value="Pedir para o mercador" data-valor="${item.id}">
-            </div>
-        `
-    });
-}
-
-printaProdutosOferta();
