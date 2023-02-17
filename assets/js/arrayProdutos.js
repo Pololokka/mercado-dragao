@@ -18,8 +18,8 @@ const produtosTodos = [
     {
         id : "2",
         imagem : "assets/img/rex.png",
-        alt: "Captão Rex",
-        nome : "Captão Rex",
+        alt: "Capitão Rex",
+        nome : "Capitão Rex",
         descricao: "O comandante da 501ª está pronto para liderar suas tropas. Mini de plástico pintada a mão.",
         preco: "120,00"
     },
@@ -42,8 +42,8 @@ const produtosTodos = [
     {
         id : "5",
         imagem : "assets/img/rex.png",
-        alt: "Captão Rex",
-        nome : "Captão Rex",
+        alt: "Capitão Rex",
+        nome : "Capitão Rex",
         descricao: "O comandante da 501ª está pronto para liderar suas tropas. Mini de plástico pintada a mão.",
         preco: "120,00"
     },
@@ -64,10 +64,10 @@ const produtosTodos = [
         preco: "100,00"
     },
     {
-        id : "8",
+        id : "22",
         imagem : "assets/img/rex.png",
-        alt: "Captão Rex",
-        nome : "Captão Rex",
+        alt: "Capitão Rex",
+        nome : "Capitão Rex",
         descricao: "O comandante da 501ª está pronto para liderar suas tropas. Mini de plástico pintada a mão.",
         preco: "120,00"
     }

@@ -21,11 +21,11 @@ function adicionaCarrinhoTodos() {
     botao.forEach( elemento => {
         elemento.addEventListener('click', evento => {
             let idProduto = evento.target.getAttribute('data-valor');
-            arrayCarrinho.push(produtosTodos[idProduto])
+            arrayCarrinho.push(produtosTodos.find(elemento => elemento.id == idProduto))
             salvaItens();
         })
     })
 }
 
-adicionaCarrinhoTodos();
 printaProdutosNovos();
+adicionaCarrinhoTodos();

@@ -20,10 +20,9 @@ function adicionaCarrinhoTodos() {
     const botao = document.querySelectorAll("[data-oferta]");
     botao.forEach( elemento => {
         elemento.addEventListener('click', evento => {
-            console.log(produtosOferta)
             console.log(evento.target.getAttribute('data-oferta'))
             let idProduto = evento.target.getAttribute('data-oferta');
-            arrayCarrinho.push(produtosOferta[idProduto])
+            arrayCarrinho.push(produtosOferta.find(elemento => elemento.id == idProduto))
             salvaItens();
         })
     })

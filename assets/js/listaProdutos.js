@@ -12,12 +12,12 @@ const todosP = document.querySelector("[data-todos]");
     `
  });
 
- function adicionaCarrinhoTodos() {
+function adicionaCarrinhoTodos() {
     const botao = document.querySelectorAll("[data-valor]");
     botao.forEach( elemento => {
         elemento.addEventListener('click', evento => {
             let idProduto = evento.target.getAttribute('data-valor');
-            arrayCarrinho.push(produtosTodos[idProduto])
+            arrayCarrinho.push(produtosTodos.find(elemento => elemento.id == idProduto))
             salvaItens();
         })
     })
