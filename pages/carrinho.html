@@ -28,6 +28,9 @@
                 <li class="menu__nav--item">
                     <a href="#" class="subtitulo menu__nav--link">Carrinho</a>
                 </li>
+                <li class="menu__nav--item">
+                    <a href="novoProduto.html" class="subtitulo menu__nav--link">Carrinho</a>
+                </li>
             </ul>
 
             <input type="button" id="btn-fecha-label">
@@ -36,48 +39,8 @@
     </section>
 
     <main>
-        <section class="carrinho">
-            <div class="carrinho__produto">
-                <img src="../assets/img/sapo.png" alt="Sapo, de Chrono Trigger" class="carrinho__img">
-                <p class="texto carrinho__nome">Sapola do Chrono Trigger</p>
-                <div class="carrinho__quantidade">
-                    <label class="texto" for="qta-carrinho">Quantidade:</label>
-                    <input type="number" name="qta" class="qta__carrinho" id="qta-carrinho" max="99">
-                </div>
-                <p class="texto carrinho__preco">R$ 150,00</p>
-            </div>
+        <section class="carrinho" data-carrinho>
 
-            <div class="carrinho__produto">
-                <img src="../assets/img/sapo.png" alt="Sapo, de Chrono Trigger" class="carrinho__img">
-                <p class="texto carrinho__nome">Sapola do Chrono Trigger</p>
-                <div class="carrinho__quantidade">
-                    <label class="texto" for="qta-carrinho">Quantidade:</label>
-                    <input type="number" name="qta" class="qta__carrinho" id="qta-carrinho" max="99">
-                </div>
-                <p class="texto carrinho__preco">R$ 150,00</p>
-            </div>
-
-            <div class="carrinho__produto">
-                <img src="../assets/img/sapo.png" alt="Sapo, de Chrono Trigger" class="carrinho__img">
-                <p class="texto carrinho__nome">Sapola do Chrono Trigger</p>
-                <div class="carrinho__quantidade">
-                    <label class="texto" for="qta-carrinho">Quantidade:</label>
-                    <input type="number" name="qta" class="qta__carrinho" id="qta-carrinho" max="99">
-                </div>
-                <p class="texto carrinho__preco">R$ 150,00</p>
-            </div>
-
-            <div class="carrinho__produto">
-                <img src="../assets/img/sapo.png" alt="Sapo, de Chrono Trigger" class="carrinho__img">
-                <p class="texto carrinho__nome">Sapola do Chrono Trigger</p>
-                <div class="carrinho__quantidade">
-                    <label class="texto" for="qta-carrinho">Quantidade:</label>
-                    <input type="number" name="qta" class="qta__carrinho" id="qta-carrinho" max="99">
-                </div>
-                <p class="texto carrinho__preco">R$ 150,00</p>
-            </div>
-
-            <input type="button" value="Finalizar Compra" class="texto compra__botao compra__conteudo">
         </section>
     </main>
 
@@ -90,5 +53,7 @@
     </footer>
     
     <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/arrayCarrinho.js"></script>
+    <script src="../assets/js/carrinho.js"></script>
 </body>
 </html>

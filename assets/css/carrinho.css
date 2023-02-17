@@ -8,22 +8,25 @@
 }
 
 .carrinho__produto{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
     align-items: center;
     background-color: var(--cor-card-fundo);
     text-align: center;
     height: 15%;
+    width: -webkit-fill-available;
     margin: 0 6em;
     border: 2px solid black;
     box-sizing: border-box;
-    padding: 0.75em;
+    padding: 0.75em 2em;
+    padding-left: 5em;
     border-radius: 15px;
     background-color: var(--cor-card-fundo);
 }
 
 .carrinho__img{
-    width: 10%;
+    width: 60%;
     border: 2px solid rgba(165, 42, 42, 0.479);
     border-radius: 15px;
 }
