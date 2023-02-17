@@ -1,0 +1,28 @@
+.add-produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input__add{
+    width: 30%;
+}
+
+.input__preco,
+.input__add {
+    text-align: center;
+    padding: 0.2em;
+    margin: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.input__preco{
+    width: 8%;
+}
+
+.label__add{
+    padding-top: 0.5em;
+}

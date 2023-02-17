@@ -23,13 +23,13 @@
                     <a href="../index.html" class="subtitulo menu__nav--link">Home</a>
                 </li>
                 <li class="menu__nav--item">
-                    <a href="#" class="subtitulo menu__nav--link">Produtos</a>
+                    <a href="produtos.html" class="subtitulo menu__nav--link">Produtos</a>
                 </li>
                 <li class="menu__nav--item">
                     <a href="carrinho.html" class="subtitulo menu__nav--link">Carrinho</a>
                 </li>
                 <li class="menu__nav--item">
-                    <a href="novoProduto.html" class="subtitulo menu__nav--link">Carrinho</a>
+                    <a href="#" class="subtitulo menu__nav--link">Carrinho</a>
                 </li>
             </ul>
 
@@ -39,12 +39,18 @@
     </section>
 
     <main>
-        <section class="produtos-todos">
-            <h2 class="titulo todos__titulo">Direto do tesouro!</h2>
+        <section class="add-produto">
+            <label for="img" class="subtitulo label__add">Link da Imagem</label>
+            <input type="text" name="img" id="img" class="texto input__add" placeholder="https://cdn.discordapp.com/attachments/621499803884584998/1076243333531324576/rex.png">
+            <label for="alt" class="subtitulo label__add">Alt da Imagem</label>
+            <input type="text" name="alt" id="alt" class="texto input__add" placeholder="Descreva brevemente a imagem">
+            <label for="nome" class="subtitulo label__add">Nome</label>
+            <input type="text" name="nome" id="nome" class="texto input__add" placeholder="Nome do produto">
+            <label for="descricao" class="subtitulo label__add">Descrição</label>
+            <textarea name="descricao" id="descricao" cols="20" rows="5" maxlength="150" class="texto input__add" placeholder="Descreva o produto em até 150 caracteres"></textarea>
+            <label for="preco" class="subtitulo label__add">Preço</label>
+            <input type="tel" name="preco" id="preco" placeholder="120,00" class="texto input__preco">
 
-            <div class="produtos-todos__container" data-todos>
-
-            </div>
         </section>
     </main>
 
@@ -57,8 +63,7 @@
     </footer>
     
     <script src="../assets/js/menu.js"></script>
-    <script src="../assets/js/arrayProdutos.js"></script>
-    <script src="../assets/js/listaProdutos.js"></script>
     <script src="../assets/js/arrayCarrinho.js"></script>
+    <script src="../assets/js/carrinho.js"></script>
 </body>
 </html>
