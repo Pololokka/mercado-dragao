@@ -1,6 +1,7 @@
 const novosP = document.querySelector("[data-novos]");
 
-produtosTodos.length = 6;
+if(produtosTodos.length > 6)
+    produtosTodos.length = 6;
 
 function printaProdutosNovos(){
     produtosTodos.map(function(item){

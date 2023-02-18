@@ -3,7 +3,6 @@ const carrinhoP = document.querySelector("[data-carrinho]");
 function printaCarrinho(){
     const arrayAgain = localStorage.getItem('array');
     arrayConvertido = JSON.parse(arrayAgain);
-    console.log(arrayConvertido);
 
     arrayConvertido.map(function(item){
         carrinhoP.innerHTML += `

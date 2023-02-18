@@ -1,6 +1,6 @@
 const todosP = document.querySelector("[data-todos]");
 
- var listaProdutosTodos = produtosTodos.map(function(item){
+var listaProdutosTodos = produtosTodos.map(function(item){
     todosP.innerHTML += `
         <div class="produto__container">
             <img src="${item.imagem}" alt="${item.alt}" class="produto__imagem">
@@ -10,7 +10,7 @@ const todosP = document.querySelector("[data-todos]");
             <input type="button" class="texto produto__botao produto__conteudo" value="Pedir para o mercador" data-valor="${item.id}">
         </div>
     `
- });
+});
 
 function adicionaCarrinhoTodos() {
     const botao = document.querySelectorAll("[data-valor]");
