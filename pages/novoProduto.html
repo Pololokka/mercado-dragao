@@ -29,7 +29,7 @@
                     <a href="carrinho.html" class="subtitulo menu__nav--link">Carrinho</a>
                 </li>
                 <li class="menu__nav--item">
-                    <a href="#" class="subtitulo menu__nav--link">Carrinho</a>
+                    <a href="#" class="subtitulo menu__nav--link">Adicionar</a>
                 </li>
             </ul>
 
@@ -41,15 +41,19 @@
     <main>
         <section class="add-produto">
             <label for="img" class="subtitulo label__add">Link da Imagem</label>
-            <input type="text" name="img" id="img" class="texto input__add" placeholder="https://cdn.discordapp.com/attachments/621499803884584998/1076243333531324576/rex.png">
+            <input type="text" name="img" id="img" class="texto input__add" placeholder="https://cdn.discordapp.com/attachments/621499803884584998/1076243333531324576/rex.png" data-addImg>
             <label for="alt" class="subtitulo label__add">Alt da Imagem</label>
-            <input type="text" name="alt" id="alt" class="texto input__add" placeholder="Descreva brevemente a imagem">
+            <input type="text" name="alt" id="alt" class="texto input__add" placeholder="Descreva brevemente a imagem" data-addAlt>
             <label for="nome" class="subtitulo label__add">Nome</label>
-            <input type="text" name="nome" id="nome" class="texto input__add" placeholder="Nome do produto">
+            <input type="text" name="nome" id="nome" class="texto input__add" placeholder="Nome do produto" data-addNome>
             <label for="descricao" class="subtitulo label__add">Descrição</label>
-            <textarea name="descricao" id="descricao" cols="20" rows="5" maxlength="150" class="texto input__add" placeholder="Descreva o produto em até 150 caracteres"></textarea>
+            <textarea name="descricao" id="descricao" cols="20" rows="5" maxlength="150" class="texto input__add" placeholder="Descreva o produto em até 150 caracteres" data-addDesc></textarea>
             <label for="preco" class="subtitulo label__add">Preço</label>
-            <input type="tel" name="preco" id="preco" placeholder="120,00" class="texto input__preco">
+            <input type="number" name="preco" id="preco" placeholder="120,00" class="texto input__preco" data-addPreco>
+            <label for="oferta" class="subtitulo">Em oferta?</label>
+            <input type="checkbox" name="oferta" id="oferta" data-addOferta>
+
+            <input type="button" value="Adicionar Item" class="subtitulo produto__botao" data-addBtn>
 
         </section>
     </main>
@@ -63,7 +67,8 @@
     </footer>
     
     <script src="../assets/js/menu.js"></script>
-    <script src="../assets/js/arrayCarrinho.js"></script>
-    <script src="../assets/js/carrinho.js"></script>
+    <script src="../assets/js/arrayProdutos.js"></script>
+    <script src="../assets/js/arrayOfertas.js"></script>
+    <script src="../assets/js/addProduto.js"></script>
 </body>
 </html>
