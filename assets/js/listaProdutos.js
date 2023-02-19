@@ -21,6 +21,6 @@ function adicionaCarrinhoTodos() {
             salvaItens();
         })
     })
- }
+}
 
- adicionaCarrinhoTodos();
+adicionaCarrinhoTodos();
