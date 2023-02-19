@@ -5,7 +5,8 @@ const produtosTodos = JSON.parse(localStorage.getItem('arrayProdutos')) || [
         alt: "Sapo, de Chrono Trigger",
         nome : "Sapola do Chrono Trigger",
         descricao: "O mais valente dos cavaleiros, agora na sua casa! Impresso em resina e pintado a mão.",
-        preco: "150,00"
+        preco: "150,00",
+        quantidade: "1"
     },
     {   
         id : "1",
@@ -13,7 +14,8 @@ const produtosTodos = JSON.parse(localStorage.getItem('arrayProdutos')) || [
         alt: "Rolf, o Bárbaro",
         nome : "Rolf, o Bárbaro",
         descricao: "Este sanguinário bárbaro mata orcs zumbis no café da manhã. Mini de plástico pintada a mão.",
-        preco: "100,00"
+        preco: "100,00",
+        quantidade : "1"
     },
     {
         id : "2",
@@ -21,7 +23,8 @@ const produtosTodos = JSON.parse(localStorage.getItem('arrayProdutos')) || [
         alt: "Capitão Rex",
         nome : "Capitão Rex",
         descricao: "O comandante da 501ª está pronto para liderar suas tropas. Mini de plástico pintada a mão.",
-        preco: "120,00"
+        preco: "120,00",
+        quantidade : "1"
     },
     {
         id : "3",
@@ -29,7 +32,8 @@ const produtosTodos = JSON.parse(localStorage.getItem('arrayProdutos')) || [
         alt: "Viking com Machado",
         nome : "Viking com Machado",
         descricao: "Machado. Mini impressa em resina e pintada a mão.",
-        preco: "200,00"
+        preco: "200,00",
+        quantidade : "1"
     }
 ];
 

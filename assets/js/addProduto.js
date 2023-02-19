@@ -19,7 +19,8 @@ function addItem() {
         alt : altAdd,
         nome : nomeAdd,
         descricao: descAdd,
-        preco: precoAdd
+        preco: precoAdd,
+        quantidade : "1"
     }
 
     ofertaAdd == false ? produtosTodos.unshift(novoProduto) : produtosOferta.unshift(novoProduto);
