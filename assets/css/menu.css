@@ -6,6 +6,7 @@
     background-image: url(../img/carrinho.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    padding: 0.5em;
     position: fixed;
     left: 1%;
     top:  50%;
@@ -26,9 +27,10 @@
 }
 
 .menu__botao--fecha{
-    background-image: url(../img/carrinho.png);
+    background-image: url(../img/carrinho-fecha.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    padding: 0.5em;
     height: 1.5em;
     width: 1.5em;
     cursor: pointer;

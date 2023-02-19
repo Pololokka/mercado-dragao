@@ -22,6 +22,14 @@ const produtosTodos = JSON.parse(localStorage.getItem('arrayProdutos')) || [
         nome : "Capitão Rex",
         descricao: "O comandante da 501ª está pronto para liderar suas tropas. Mini de plástico pintada a mão.",
         preco: "120,00"
+    },
+    {
+        id : "3",
+        imagem : "https://cdn.discordapp.com/attachments/621499803884584998/1076555585589358683/viking_1.png",
+        alt: "Viking com Machado",
+        nome : "Viking com Machado",
+        descricao: "Machado. Mini impressa em resina e pintada a mão.",
+        preco: "200,00"
     }
 ];
 
