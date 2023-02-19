@@ -4,29 +4,53 @@
 
 Uma página de e-commerce com a temática de rpg
 
+A página faz profundo uso de arrays, assim como utliza o local storage para salvar os itens no carrinho do cliente, e adicionar novos itens na página
+
 ## Tecnologias
 
 * HTML
 * CSS
 * JavaScript
 
+## Deploy
+
+Você pode acessar este site por [aqui!](https://pololokka.github.io/mercado-dragao/)
+
 ## Escopo do projeto
 
 ### Home
 
-Página principal que mostra alguns produtos(como mais vendidos, novas ofertas, e etc), assim como login e cadastro de novos clientes
+Página principal que mostra alguns produtos(como mais vendidos, novas ofertas, e etc)
+
+![Página inicial](https://cdn.discordapp.com/attachments/621499803884584998/1076919369940086854/Opera_Instantaneo_2023-02-19_142301_index.html.png)
+
+![Página inicial](https://cdn.discordapp.com/attachments/621499803884584998/1076919370191753226/Opera_Instantaneo_2023-02-19_142353_index.html.png)
 
 ### Produtos
 
 Página que mostra todos os produtos do catálogo
 
+![Produtos](https://cdn.discordapp.com/attachments/621499803884584998/1076919370451783761/Opera_Instantaneo_2023-02-19_142520_produtos.html.png)
+
 ### Carrinho
 
-Página que indica quais produtos o cliente está comprando
+Página que indica quais produtos o cliente está comprando, e também permite a edição do carrinho
 
-### Finalizado
+![Carrinho](https://cdn.discordapp.com/attachments/621499803884584998/1076919369378050099/Opera_Instantaneo_2023-02-19_142603_carrinho.html.png)
 
-Página que indica que a compra foi concluída com sucesso
+### Adicionar
+
+Página para adição de novos produtos na loja
+
+![Adicionar](https://cdn.discordapp.com/attachments/621499803884584998/1076919369654865970/Opera_Instantaneo_2023-02-19_143238_novoProduto.html.png)
+
+## Sobre o desenvolvimento
+
+O intuito deste projeto foi me aprofundar mais no uso de arrays e seus métodos. 
+
+Como é assunto que, durante meus estudos, vi muito pouco, foi bom retornar nisso e aprender mais, assim como rever coisas que já sabia.
+
+Senti um pouco de dificuldade em alguns métodos específicos de arrays(como o find), mas nada que um pouco de estudo, perseverança, e questionar pessoas entendidas do assunto não ajudasse no caso.
 
 ## Licença
 

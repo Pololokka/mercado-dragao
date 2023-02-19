@@ -7,13 +7,14 @@ function printaCarrinho(){
     arrayConvertido.map(function(item){
         carrinhoP.innerHTML += `
             <div class="carrinho__produto">
-                <img src="../${item.imagem}" alt="${item.alt}" class="carrinho__img">
+                <img src="${item.imagem}" alt="${item.alt}" class="carrinho__img">
                 <p class="texto carrinho__nome">${item.nome}</p>
                 <div class="carrinho__quantidade">
                     <label class="texto" for="qta-carrinho">Quantidade:</label>
                     <input type="number" name="qta" class="qta__carrinho" id="qta-carrinho" max="99" data-quantidade>
                 </div>
                 <p class="texto carrinho__preco" data-preco>R$ ${item.preco}</p>
+                <input type="button" value="Remover Item" class="texto produto__botao" data-remove="${item.id}">
             </div>
         `
     });
