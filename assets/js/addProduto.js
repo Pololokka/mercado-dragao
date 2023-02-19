@@ -26,4 +26,5 @@ function addItem() {
     ofertaAdd == false ? produtosTodos.unshift(novoProduto) : produtosOferta.unshift(novoProduto);
     salvaProdutos();
     salvaOfertas();
+    location.reload()
 }
