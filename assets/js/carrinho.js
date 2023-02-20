@@ -11,7 +11,7 @@ function printaCarrinho(){
                 <p class="texto carrinho__nome">${item.nome}</p>
                 <div class="carrinho__quantidade">
                     <label class="texto" for="qta-carrinho">Quantidade:</label>
-                    <input type="number" name="qta" class="qta__carrinho" id="qta-carrinho" max="99" min="0" data-qta="${item.id}">
+                    <input type="number" value="1" name="qta" class="qta__carrinho" id="qta-carrinho" max="99" min="0" data-qta="${item.id}">
                 </div>
                 <p class="texto carrinho__preco" id="${item.id}">R$ ${item.preco}</p>
                 <input type="button" value="Remover Item" class="texto produto__botao" data-remove="${item.id}">
